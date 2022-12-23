@@ -7,11 +7,11 @@
     "default_icon": {
       "128": "images/main.png"
     },
-    "default_title": "Mainify - click to toggle off",
+    "default_title": "Mainify - click to toggle off, or CMD + u",
     "default_popup": "popup.html"
   },
   "host_permissions": [
-    "*://github.com/expel-io/*"
+    "*://github.com/*"
   ],
   "declarative_net_request": {
     "rule_resources": [{

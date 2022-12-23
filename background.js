@@ -42,24 +42,3 @@ chrome.runtime.onMessage.addListener(async function(message, sender, sendRespons
         }
     }
   });
-
-
-//   function disableRule() {
-//     chrome.declarativeNetRequest.updateEnabledRulesets(
-//       {
-//         disableRulesetIds: ["ruleset_enable"],
-//         enableRulesetIds:["ruleset_disable"]
-//       },
-//       () => {}
-//     );
-//   }
-  
-//   function enableRule() {
-//     chrome.declarativeNetRequest.updateEnabledRulesets(
-//       {
-//         enableRulesetIds: ["ruleset_enable"],
-//         disableRulesetIds: ["ruleset_disable"]
-//       },
-//       () => {}
-//     );
-//   }
