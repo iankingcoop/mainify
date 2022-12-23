@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+        "type": "redirect",
+        "redirect": {
+        "regexSubstitution": "https://github.com/\\2/\\3/blob/main\\5"
+        }
+    },
+    "condition": {
+        "regexFilter": "^(http[s]?://)?github\\.com\/([^\/]+)\/([^\/]+)\/blob+\/([^\/]+)(.*)",
+        "resourceTypes": [
+        "main_frame"
+        ]
+    }
+  }
+]

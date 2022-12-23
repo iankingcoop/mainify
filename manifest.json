@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Mainify",
+  "version": "1.3",
+  "description": "redirect the URL to main to avoid the annoying random branches github takes you to",
+  "action": {
+    "default_icon": {
+      "128": "images/main.png"
+    },
+    "default_title": "Mainify - click to toggle off",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "*://github.com/expel-io/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+U",
+        "mac": "Command+U"
+      }
+    }
+  }
+}
