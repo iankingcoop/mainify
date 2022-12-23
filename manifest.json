@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mainify",
   "version": "1.3",
-  "description": "redirect the URL to main to avoid the annoying random branches github takes you to",
+  "description": "Redirect the github URL to the main branch instead of the commit hash to make sharing URLs cleaner",
   "action": {
     "default_icon": {
       "128": "images/main.png"
